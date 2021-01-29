@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 95vh;
+    background-image: url(./img/starbuck\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 60px;
+    position: relative;
+}
+
+.logo, .nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-link{
+    font-size: 15px;
+    margin: 30px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+/* presentation */
+
+.presentation{
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.text-presentation,
+.presentation img{
+    flex: 1;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        transform: rotate(15deg);
+    }
+}
+
+
+.presentation h1{
+    color: white;
+    font-size: 50px;
+    word-spacing:10px;
+}
+
+.presentation p{
+    padding-top: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: 400px;
+    word-spacing: 5px;
+}
+
+.presentation img{
+    position: relative;
+    height: 80vh;
+    left: -100px;
+    transform: rotate(15deg);
+    filter: drop-shadow(0 3px 3px black);
+    animation: drop 1.5s ease;
+}
+
+.btn{
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.social-link{
+    display: flex;
+    list-style: none;
+    width: 150px;
+    position: absolute;
+    right: 100px;
+    justify-content: space-around;
+}
+
+.sos{
+    text-decoration: none;
+    color: white;
+}
+
+/* =================================== */
+.facilities{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title,
+.facil{
+    flex: 1;
+
+}
+
+.title h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.title p{
+    color: rgb(14, 132, 72) ;
+}
+
+.facil ul{
+    padding-top: 40px;
+    display: flex;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.facil ul li{
+    margin: 0 50px;
+}
+
+/* border-bg for icon */
+.facil i{
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(14, 132, 72);
+}
+
+.facil span{
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* brand */
+.brand{ 
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+.brand-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -200px;
+}
+
+.brand-1 h1{
+    font-size: 35px;
+}
+
+.brand-1 p{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.brand-1 .btn{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: rgb(14, 132, 72);
+    color: white;
+    font-weight: 700;
+}
+
+.brand-1 img{
+    transform: rotate(-5deg);
+    filter: drop-shadow(0 3px 3px black);
+}
+
+.brand-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.brand-2 .text{
+    margin-left: 10%;
+}
+
+.brand-2 h1{
+    font-size: 35px;
+    width: 500px;
+}
+
+.brand-2 p{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.brand-2 .btn{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: rgb(14, 132, 72);
+    color: white;
+    font-weight: 700;
+}
+
+.brand-2 img{
+    width: 420px;
+    height: 420px;
+    transform: rotate(5deg);
+    filter: drop-shadow(0 3px 3px black);
+}
+
+
+/* pricelist */
+.pricelist{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.pricelist h1{
+    font-size: 35px;
+}
+
+.pricelist p{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+/* card */
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.card-1, .card-2, .card-3{
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    background-color: rgb(14, 132, 72);
+    border-radius: 10px;
+}
+
+.card p{
+    font-size: 20px;
+}
+
+
+.card button{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.card-1 button{
+    margin: 0 0 50px 0;
+}
+
+.card-3 button{
+    margin: 15px 0 50px 0;
+}
+
+
+.card-1 img{
+    margin-top: -50px;
+}
+
+.card-2 img{
+    margin-top: -70px;
+}
+
+.card-3 img{
+    margin-top: -50px;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    background-color: #333;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/* responsive breakpoints */
+@media screen and (max-width:1024px){  
+    .presentation{
+        display: flex;
+        align-items: center;
+        padding: 0 5%;
+    }
+    
+    .presentation h1{
+        font-size: 44px;
+        width: 500px;
+    }
+
+    .presentation p{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .presentation img {
+    position: relative;
+    height: 70vh;
+    left: -170px;
+    transform: rotate(15deg);
+    filter: drop-shadow(0 3px 3px black);
+    animation: drop 1.5s ease;
+    }
+
+    .social-link{
+    display: flex;
+    list-style: none;
+    width: 150px;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    justify-content: space-around;
+    }
+}
