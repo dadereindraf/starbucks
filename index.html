@@ -3,122 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./webfont/fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../../webfonts/fontawesome-free-5.15.2-web/css/all.min.css">
+    <script src="https://kit.fontawesome.com/3d4ed9f8d2.js" crossorigin="anonymous"></script>
+    <title>Starbucks</title>
 </head>
 <body>
-    
-    <!-- header -->
-    <header id="home">
-        <div class="container">
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="nav-link" href="#home">Home</a></li>
-                    <li><a class="nav-link" href="#about">About</a></li>
-                    <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-            </nav>
+    <header>
+        <nav>
+            <a href="#" class="logo">Starbucks</a>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Contact Us</a></li>
+            </ul>
+         </nav>
+         <div class="presentation">
+             <div class="text-presentation">
+                <h1>Enjoy your day with <br> cold coffee</h1>
+                <p>
+                    Taste the various flavour with <br> cold coffee variants.
+                </p>
 
-            <div class="presentation">
-                <div class="text-presentation">
-                    <h1>Hi, i'm <span>Dade Reindra Firdaus</span>
-                        <br>
-                        I'm a Front-End Developer
-                    </h1>
-                    <a href="#about" class="cta-presentation">Know More</a>
-                </div>
-            </div>
+                <button type="submit" class="btn">Let's Buy</button>   
+             </div>
+
+            <img src="./img/starbucks drinks.png" alt="cold coffee">
+            
+         </div>
+        <div class="social-links">
+            <ul class="social-link">
+                <li><a href="#" class="sos"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="sos"><i class="fab fa-instagram"></i></a></i></li>
+                <li><a href="#" class="sos"><i class="fab fa-facebook"></i></a></i></li>
+            </ul>
         </div>
     </header>
 
-
-    <!-- about -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-title section-title-about">
-                <h2>About Me</h2>
-            </div>
-
-            <hr class="hr about-hr">
-
-            <div class="content-about">
-                <img src="./img/dade_kota.png" alt="dade">
-                <div class="text-about">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias quae eum illum dolores expedita, quisquam aliquid tenetur explicabo nihil eaque ea iste velit vitae sit mollitia quos eveniet dolore.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima quo ex in veritatis dolorem quaerat nemo repellendus illo repudiandae, numquam soluta, ducimus, amet at. Tempore molestias iure error labore.</p>
-                    <a href="#" class="cta-all">Download CV</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <!-- portfolio -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-title section-title-portfolio">
-                <h2>Portfolio</h2>
-            </div>
-
-            <hr class="hr port-hr">
-
-            <div class="port-content">
-                <div class="port-text">
-                    <h3>Project</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos unde id officia, sit doloremque eligendi reiciendis magni veniam iusto libero!</p>
-                    <a href="#" class="cta-port">View Live</a>
-                    <a href="#" class="sc">Source Code</a>
-                </div>
-                <div class="port-img">
-                    <img src="./img/project1.PNG" alt="project1">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-title section-title-contact">
-                <h2>Contact Me</h2>
-            </div>
-
-            <hr class="hr contact-hr">
-
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name..." required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email..." required>
-
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Write something..."></textarea>
-
-                <input type="submit" id="submit" value="Send">
-            </form>
-        </div>
-    </section>
-
-
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <p class="penulis">
-                &copy;2021 | built by <a href="#">dadereindraf</a>
+    <!-- Features========================= -->
+    <section class="facilities" id="facilities">
+        <div class="title">
+             <h2>Facilities</h2>
+            <p>
+                We provide convinient facilities to our customers
             </p>
-            <div class="social">
-                <ul class="social-links">
-                    <li><a href="#" class="sos"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" class="sos"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#" class="sos"><i class="fab fa-twitter"></i></a></li>
-                </ul>
+        </div>
+       <div class="facil">
+           <ul>
+               <li><i class="fas fa-wifi"></i> <span>Free WiFi</span> </li>
+               <li><i class="fas fa-map-marker-alt"></i> <span>Many Branches</span></li>
+               <li><i class="fas fa-dollar-sign"></i> <span>Pricelist</span>  </li>
+           </ul>
+       </div>
+    </section>
+
+    <!-- brand -->
+    <section class="brand" id="brand">
+        <div class="brand-1">
+            <div class="img-1">
+                <img src="./img/starbucks 1 fasil.png" alt="starbucks-1">
+            </div>
+            <div class="text">
+                <h1>Try a variety of unique <br> flavors</h1>
+                <p>
+                    We provide a variety of flavours that you're never tasted
+                </p>
+                <button class="btn" type="submit">Let's Buy</button>
             </div>
         </div>
+        <div class="brand-2">
+            <div class="text">
+                <h1>Choose a variety of toppings that you like</h1>
+                <p>
+                    We provide a variety of flavours that you're never tasted
+                </p>
+                <button class="btn" type="submit">Let's Buy</button>
+            </div>
+            <div class="img-2">
+                <img src="./img/starbucks 2.png" alt="starbucks-2">
+            </div>
+        </div>
+    </section>
+    
+    <!-- pricelist -->
+    <section class="pricelist" id="pricelist">
+        <div class="text">
+            <h1>Pricelist</h1>
+            <p>
+                We provide prices Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-1">
+                <div class="top-card">
+                    <img src="./img/starbucks 1 (1).png" alt="brand">
+                </div>
+                <div class="desc">
+                    <p>Strawberry Shortcake with Vanilla</p>
+                    <button type="submit">$15.00</button>
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="top-card">
+                    <img src="./img/starbucks 2 (1).png" alt="">
+                </div>
+                <div class="desc">
+                    <p>Chocolate Caramel</p>
+                    <button type="submit">$15.00</button>
+                </div>
+            </div>
+            <div class="card-3">
+                <div class="top-card">
+                    <img src="./img/starbucks drinks (1).png" alt="">
+                </div>
+                <div class="desc">
+                    <p>Starbuck Special</p>
+                    <button type="submit">$15.00</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Copyright 2021 | built by <a href="#">dadereindraf</a> | designed by <a href="#">M. Hikaru Naufal</a></p>
     </footer>
 
 </body>
